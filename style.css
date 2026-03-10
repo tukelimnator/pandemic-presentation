@@ -1,4 +1,4 @@
-/* Reveal.js overrides for STRICT formatting rules */
+/* Reveal.js overrides for STRICT formatting rules - WWZ Redesign */
 
 .reveal {
     /* Strict white background */
@@ -18,7 +18,7 @@ body {
     text-align: left;
 }
 
-/* Typography Overrides */
+/* Typography Overrides - AGGRESSIVE STYLING */
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -28,76 +28,88 @@ body {
     font-family: inherit;
     font-weight: 900;
     text-transform: uppercase;
-    color: #111111;
-    margin-bottom: 30px;
+    color: #0d0d0d;
+    margin-bottom: 20px;
+    letter-spacing: -1px; /* Tighter tracking for cinematic feel */
 }
 
-.reveal h1 { font-size: 3em; }
-.reveal h2 { font-size: 2.2em; border-bottom: 4px solid #000; padding-bottom: 10px; display: inline-block; margin-bottom: 40px; }
-.reveal h3 { font-size: 1.5em; color: #444; }
+.reveal h1 { 
+    font-size: 3.5em; 
+    text-shadow: 2px 2px 0px #8b0000; /* Blood red drop shadow */
+}
+.reveal h2 { 
+    font-size: 2.5em; 
+    border-bottom: 6px solid #8b0000; /* Aggressive blood red border */
+    padding-bottom: 5px; 
+    display: inline-block; 
+    margin-bottom: 30px; 
+}
+.reveal h3 { font-size: 1.8em; color: #8b0000; }
 
 .reveal p, .reveal li {
-    font-weight: 700; /* Bold fonts */
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #222222;
-    margin-bottom: 20px;
+    font-weight: 900; /* Max bold */
+    font-size: 1.3em;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin-bottom: 15px;
 }
 
 .reveal ul {
     margin-left: 0;
-    list-style-type: square;
+    list-style-type: none; /* Remove default bullets */
 }
 
-.reveal li, .reveal strong {
-    font-weight: 800; /* Extra bold */
+.reveal ul li::before {
+    content: "■ "; /* Harsh square bullet */
+    color: #8b0000; /* Blood red bullets */
 }
 
-/* Layout for Slides with Images */
+/* Layout for Slides with Images - LARGER IMAGES */
 .content-split {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    height: 60vh;
+    gap: 30px;
+    height: 70vh; /* Larger height for bigger impact */
 }
 
 .content-split .keywords {
-    flex: 1;
+    flex: 0.8; /* Text takes less space */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .content-split .keywords li {
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding: 15px 0;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 3px solid #000000; /* Harsher borders */
 }
 
 .content-split img {
-    flex: 1;
-    max-width: 50%;
+    flex: 1.2; /* Image takes more space */
+    max-width: 60%; 
     max-height: 100%;
     object-fit: cover;
-    border: 4px solid #000;
-    box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+    border: 8px solid #000000; /* Heavy, black stark border */
+    box-shadow: 15px 15px 0px rgba(139, 0, 0, 0.8); /* Thick red offset shadow */
     margin: 0;
 }
 
 /* Final Verdict Styles */
 .verdict {
-    font-size: 4em;
+    font-size: 5em;
     font-weight: 900;
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
+    text-shadow: 4px 4px 0px #000; /* Heavy black shadow */
 }
 
 .verdict .yes {
-    color: #28a745;
+    color: #000000; /* Replaced green with black to stay moody */
 }
 
 .verdict .no {
-    color: #dc3545;
+    color: #8b0000; /* Deep red */
 }

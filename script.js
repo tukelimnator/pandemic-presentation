@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
         progress: true,
         center: false,
         hash: true,
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'zoom', // Changed to zoom for dramatic WWZ effect
+        transitionSpeed: 'fast', // Extra chaotic element
         
         // Disable default background to enforce custom CSS
         backgroundTransition: 'none',
